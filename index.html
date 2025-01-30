@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Subscription Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" tabindex="0">
+
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" id="navbarNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Car Rental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Gallary">Gallary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-dark">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div style="margin-top: 80px;" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/55.jpeg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Luxury Cars</h5>
+                        <p>Experience the best in comfort and style.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/44.jpeg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Family Cars</h5>
+                        <p>Perfect for family trips and long journeys.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/66.jpeg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sports Cars</h5>
+                        <p>Feel the thrill of speed and performance.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Gllary Section -->
+    <div class="container mt-5 mb-5" id="Gallary" data-aos="fade-up">
+        <h1 class="text-center text-primary mb-4">Car Gallery</h1>
+        <div class="row" id="product-container">
+        </div>
+    </div>
+
+
+    <!-- Features Section -->
+    <div class="container text-center mt-5 mb-5" id="features" data-aos="fade-up">
+        <h2 class="text-primary">Features</h2>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-3 mb-4" data-aos="fade-up">
+                <div class="card shadow">
+                    <img src="img/5.jpeg" class="w-100 rounded" alt="Feature 1">
+                    <div class="card-body">
+                        <p class="text-muted">24/7 Customer Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow">
+                    <img src="img/6.jpeg" class="w-100 rounded" alt="Feature 2">
+                    <div class="card-body">
+                        <p class="text-muted">Flexible Rental Plans</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow">
+                    <img src="img/6.jpeg" class="w-100 rounded" alt="Feature 3">
+                    <div class="card-body">
+                        <p class="text-muted">Wide Range of Vehicles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card shadow">
+                    <img src="img/5.jpeg" class="w-100 rounded" alt="Feature 4">
+                    <div class="card-body">
+                        <p class="text-muted">Easy Online Booking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Pricing Section -->
+    <div class="container text-center mb-5 mt-5" id="pricing" data-aos="fade-up">
+        <h2 class="text-primary">Pricing Plans</h2>
+    </div>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card pricing-card text-center shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="text-muted">For Individuals</p>
+                        <h2>$50 <span class="fs-6">/month</span></h2>
+                        <p class="text-muted">Ideal for short trips and occasional use.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 1 Car Model</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 500 Miles/Month</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Basic Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                            Book Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card pricing-card text-center shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                        <p class="text-muted">For Small Businesses</p>
+                        <h2>$100 <span class="fs-6">/month</span></h2>
+                        <p class="text-muted">Great for frequent use and small teams.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 3 Car Models</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 1000 Miles/Month</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Priority Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                            Book Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card pricing-card text-center shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <p class="text-muted">For Large Enterprises</p>
+                        <h2>$200 <span class="fs-6">/month</span></h2>
+                        <p class="text-muted">Best for large teams and unlimited access.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 5 Car Models</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Unlimited Miles</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> 24/7 Premium Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Car</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="carModel" class="form-label">Car Model</label>
+                            <select class="form-control" id="carModel">
+                                <option>Basic Plan Car</option>
+                                <option>Standard Plan Car</option>
+                                <option>Premium Plan Car</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; 2025 Car Rental. All rights reserved.</p>
+        <div>
+            <a href="#" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <button class="fab" onclick="scrollToTop()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

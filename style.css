@@ -1,0 +1,170 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg: #f8f9fa;
+    --nav-text: #000000;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-bg: #1e1e1e;
+    --nav-text: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+    transition: background-color 0.3s;
+}
+
+.navbar a {
+    color: var(--nav-text) !important;
+    transition: color 0.3s;
+}
+
+.dark-mode .navbar a {
+    color: var(--nav-text) !important;
+}
+
+#darkModeToggle {
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    border: 1px solid var(--text-color);
+
+}
+
+.dark-mode #darkModeToggle {
+    background-color: white;
+    color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.loader {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+}
+
+.pricing-card {
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card,
+.pricing-card,
+.car-card {
+    will-change: transform;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.navbar.scrolled {
+    background-color: #222 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
