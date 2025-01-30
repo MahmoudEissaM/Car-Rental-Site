@@ -56,9 +56,9 @@ A simple loading animation to enhance the user experience.
 
 ## 📸 Screenshots
 
-| Light Mode | Dark Mode |
+| Dark Mode | Light Mode  |
 |------------|-----------|
-| <img src="assets/light-mode.png" width="400"> | <img src="assets/dark-mode.png" width="400"> |
+| <img src="img/DarkMod.JPG" width="400"> | <img src="img/LightMod.JPG" width="400"> |
 
 ## 📌 How to Use
 
